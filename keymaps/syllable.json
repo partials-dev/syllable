@@ -1,6 +1,5 @@
 {
   "atom-text-editor": {
-    "cmd-s y g": "syllable:group",
-    "cmd-s y s": "syllable:sort"
+    "ctrl-s": "syllable:group-by-syllable"
   }
 }

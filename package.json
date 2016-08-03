@@ -2,17 +2,20 @@
   "name": "syllable",
   "main": "./lib/index",
   "version": "0.0.1",
-  "description": "An Atom package that sorts and manipulates words by their number of syllables",
-  "keywords": [],
-  "repository": "https://github.com/partials-music/atom-syllable",
+  "description": "An Atom package that groups words by their number of syllables",
+  "keywords": [
+    "linguistics",
+    "nlp",
+    "language"
+  ],
+  "repository": "https://github.com/partials-dev/syllable",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "activationCommands": {
     "atom-workspace": [
-      "syllable:group",
-      "syllable:sort",
+      "syllable:group-by-syllable",
       "syllable:clear-cache"
     ]
   },
@@ -20,6 +23,7 @@
     "lodash": "^4.13.1",
     "moment": "^2.14.1",
     "nlp-syllables": "0.0.5",
+    "nlp-syllables-async": "0.0.1",
     "nlp_compromise": "^6.5.0",
     "scrape-url": "^3.0.0"
   },
@@ -42,11 +46,6 @@
     ]
   },
   "configSchema": {
-    "wordnikApiKey": {
-      "title": "Wordnik API Key",
-      "description": "Lets us pull word information from the Wordnik API",
-      "type": "string",
-      "default": ""
-    }
+
   }
 }

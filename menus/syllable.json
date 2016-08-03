@@ -7,12 +7,8 @@
           "label": "Syllable",
           "submenu": [
             {
-              "label": "Sort Words By Syllable",
-              "command": "syllable:sort"
-            },
-            {
               "label": "Group Words By Syllable",
-              "command": "'syllable:group'"
+              "command": "syllable:group-by-syllable"
             }
           ]
         }
